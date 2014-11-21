@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: feedback_app_development
+  username: feedback_app
+
+test:
+  <<: *default
+  database: feedback_app_test
+
+production:
+  <<: *default
+  database: feedback_app_production
+  username: feedback_app
+  password: <%= ENV['FEEDBACK-APP_DATABASE_PASSWORD'] %>
