@@ -41,3 +41,4 @@ gem 'spring',        group: :development
 gem 'haml-rails'
 gem 'bourbon'
 gem 'foundation-rails'
+gem 'rails_admin'
