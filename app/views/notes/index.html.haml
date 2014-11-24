@@ -1,7 +1,10 @@
 %h1 Notes
+Test 2
 
-%ul
-  - @notes.each do |note|
-    %li
-      = note.text
+/ %ul.small-block-grid-3
+%section.notes
+  %ul.block-grid
+    - @notes.each do |note|
+      %li
+        = note.text
 

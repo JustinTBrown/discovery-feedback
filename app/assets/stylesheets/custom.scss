@@ -1,0 +1,13 @@
+.notes{
+	@include grid-row();
+	// margin: 1em;
+	padding: 1em;
+}
+.block-grid{
+	@include block-grid(1);
+};
+.block-grid li{
+	border: solid 1px $smoke;
+	padding: 2em;
+	
+}
