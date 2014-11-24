@@ -13,13 +13,33 @@
 
 };
 .block-grid li{
-	border: solid 1px $aluminum;
-	border-radius: 6px;
+	// background: $charcoal;
+	background: $white;
+	// border: solid 1px $aluminum;
+	border: solid 1px $gainsboro;
+	border-radius: $global-radius;
 	margin-bottom: 1em;
 	// margin-right: 1em;
 	margin-top: 1em;
 	min-height: 10em;
+	overflow: hidden;
+	// padding: 0;
+	position: relative;
+}
+.block-grid .text{
+	background: $white;
 	padding: 1em;
 
-	
+}
+.block-grid .details{
+	background: $gainsboro;
+	bottom: 0;
+	display: block;
+	height: 1.5em;
+	left: 0;
+	// overflow: hidden;
+	// position: relative;
+	position: absolute;
+	width: 100%;
+
 }
