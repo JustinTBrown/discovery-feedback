@@ -1,6 +1,6 @@
-%h1 Notes
+/ = javascript_include_tag "iconic"
+/ = stylesheet_link_tag "iconic-glyphs"
 
-/ %ul.small-block-grid-3
 %section.notes
   %ul.block-grid
     - @notes.each do |note|
@@ -8,4 +8,16 @@
         .text
           = note.text
         .details
+          / %span.fi-heart{:title => "heart"}
+          / %span.fi-heart
+          / %span{:class => "fi-heart"}
+          = note.likes
+          / %span{:class => "iconic", :'data-glyph' => "heart", :title => "heart"}
+          / %i.fi-heart
+          / %img{:src => "heart.svg", :alt => "Like"}
+          = image_tag("heart.svg", :class => "icon", :title => "Like")
+          / %img(:class => "iconic", :"data-src" => "heart.svg")
+          / %img{:class => "iconic", :"data-src" => "heart.svg"}
+          / %img.iconic(:"data-src" => "heart.svg")
+          / Like
 

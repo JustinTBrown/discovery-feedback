@@ -107,7 +107,7 @@ $column-gutter: rem-calc(30);
 // $ghost       : #FAFAFA;
 $snow        : #F9F9F9;
 // $vapor       : #F6F6F6;
-// $white-smoke : #F5F5F5;
+$white-smoke : #F5F5F5;
 $silver      : #EFEFEF;
 // $smoke       : #EEEEEE;
 $gainsboro   : #DDDDDD;
@@ -125,7 +125,8 @@ $steel       : #666666;
 
 // We use these to control various global styles
 // $body-bg: $snow;
-$body-bg: $silver;
+// $body-bg: $silver;
+$body-bg: $white-smoke;
 $body-font-color: $steel;
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;

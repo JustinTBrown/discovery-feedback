@@ -1,3 +1,10 @@
+h1 span{
+	color: $smoke;
+	// display: inline-block;
+	font-size: 0.7em;
+	margin: 0 0 0 1.8em;
+}
+
 .notes{
 	@include grid-row();
 	// margin: 1em;
@@ -16,7 +23,8 @@
 	// background: $charcoal;
 	background: $white;
 	// border: solid 1px $aluminum;
-	border: solid 1px $gainsboro;
+	// border: solid 1px $gainsboro;
+	border: solid 1px $smoke;
 	border-radius: $global-radius;
 	margin-bottom: 1em;
 	// margin-right: 1em;
@@ -29,17 +37,31 @@
 .block-grid .text{
 	background: $white;
 	padding: 1em;
+	
 
 }
 .block-grid .details{
 	background: $gainsboro;
 	bottom: 0;
 	display: block;
+	font-size: 0.8em;
 	height: 1.5em;
 	left: 0;
 	// overflow: hidden;
+	padding: 0 0 0 1em;
 	// position: relative;
 	position: absolute;
 	width: 100%;
 
+}
+.details .icon{
+	// fill: $charcoal;
+	fill: red;
+	height: 0.8em;
+	// height: 12px;
+	margin: 0 0 0.15em 0;
+	// stroke: $charcoal;
+	stroke: red;
+	width: 0.8em;
+	// width: 12px;
 }
