@@ -1,13 +1,25 @@
 .notes{
 	@include grid-row();
 	// margin: 1em;
-	padding: 1em;
+	padding: 2em;
 }
 .block-grid{
 	@include block-grid(1);
+	@media #{$medium-up} {
+		// clear: none !important;
+		// @include block-grid($per-row: 2, $spacing: 20px);
+		@include block-grid($per-row: 2);
+	};
+
 };
 .block-grid li{
-	border: solid 1px $smoke;
-	padding: 2em;
+	border: solid 1px $aluminum;
+	border-radius: 6px;
+	margin-bottom: 1em;
+	// margin-right: 1em;
+	margin-top: 1em;
+	min-height: 10em;
+	padding: 1em;
+
 	
 }

@@ -373,7 +373,7 @@ $column-gutter: rem-calc(30);
 // 03. Block Grid
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-$include-html-block-grid-classes: $include-html-classes;
+// $include-html-block-grid-classes: $include-html-classes;
 // $include-xl-html-block-grid-classes: false;
 
 // We use this to control the maximum number of block grid elements per row
@@ -382,7 +382,7 @@ $include-html-block-grid-classes: $include-html-classes;
 // $align-block-grid-to-grid: false;
 
 // Enables media queries for block-grid classes. Set to false if writing semantic HTML.
-// $block-grid-media-queries: true;
+$block-grid-media-queries: true;
 
 // 04. Breadcrumbs
 // - - - - - - - - - - - - - - - - - - - - - - - - -
