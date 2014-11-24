@@ -65,3 +65,53 @@ h1 span{
 	width: 0.8em;
 	// width: 12px;
 }
+.container{
+	background: rgba(255,255,255,0.8);
+	bottom: 0;
+	display: block;
+	position: fixed;
+	width: 100%;
+	
+}
+.feedback{
+	@include grid-row();
+	// margin-bottom: 0 auto;
+	padding: 0.5em;
+}
+.feedback-button{
+	@media #{$small-only} {
+		@include button(
+			$button-med,
+			$primary-color,
+			true,
+			true,
+			false
+			// $radius: $global-radius,
+			// $full-width: true
+		);
+		margin: 0;
+	}
+	@media #{$medium-up} {
+		@include button(
+			$button-med,
+			$primary-color,
+			true,
+			false,
+			false
+			// $radius: $global-radius,
+			// $full-width: false
+		);
+		float: right;
+		margin: 0;
+		min-width: 10em;
+		// text-align: right;
+		// position: absolute;
+		// right: 0;
+		// top: 0;
+	};
+	// @media #{$medium-up} {
+	// 	// position: absolute;
+	// 	// right: 0;
+	// 	// text-align: right;
+	// }
+}
