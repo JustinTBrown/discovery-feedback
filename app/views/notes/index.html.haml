@@ -22,6 +22,7 @@
           / Like
 .container
   %section.feedback
-    %a{:href => "#", :class => "feedback-button"}
-      Add Note
-
+    / = link_to("Add Note", new_note_path, class: 'feedback-button')
+    = link_to "Add Note", new_note_path, :class => 'feedback-button'
+    / %a{:href => "#", :class => "feedback-button"}
+    /   Add Note
