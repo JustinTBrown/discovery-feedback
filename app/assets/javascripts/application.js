@@ -14,6 +14,15 @@
 //= require jquery_ujs
 //= require foundation
 //= require turbolinks
+//= require masonry.pkgd.min
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
+
+var container = document.querySelector('#container');
+var msnry = new Masonry( container, {
+  // options
+  // columnWidth: 200,
+  gutter: 30,
+  itemSelector: '.item'
+});
