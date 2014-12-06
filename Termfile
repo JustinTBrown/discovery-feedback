@@ -1,0 +1,10 @@
+root:
+  ~/Documents/Code/feedback-app
+
+commands:
+  rails_c:			rails c							# Rails Console
+
+layout:
+  - [ rails_c ]			# column 1, with 2 panes
+
+

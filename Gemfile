@@ -31,7 +31,8 @@ gem 'spring',        group: :development
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
+gem 'unicorn-rails', group: :development
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -44,6 +45,6 @@ gem 'bourbon'
 gem 'foundation-rails'
 gem 'rails_admin'
 gem 'clrs'
-gem 'thin'
+# gem 'thin'
 gem 'rails_12factor', group: :production
 gem 'guard-livereload', group: :development
