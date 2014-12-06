@@ -1,0 +1,9 @@
+%li.item
+  .date
+    = time_ago_in_words(note.created_at)
+  .text{ :class => "background-#{ note.colour }" }
+    = note.text
+  .details
+    = link_to "#" do
+      = note.likes
+      = image_tag("heart.svg", :class => "icon", :title => "Like")

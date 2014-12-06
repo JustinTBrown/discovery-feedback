@@ -43,6 +43,7 @@ gem 'bourbon'
 gem 'foundation-rails'
 gem 'rails_admin'
 gem 'clrs'
+gem 'thin'
 
 group :development do
   gem 'guard-livereload'

@@ -1,32 +1,6 @@
-/ = javascript_include_tag "iconic"
-/ = stylesheet_link_tag "iconic-glyphs"
-%script
-  
-
 %section.notes
   %ul.block-grid#container
-    - @notes.each do |note|
-      %li.item
-        .text{ :class => "background-#{ note.colour }" }
-          = note.text
-        .details
-          / %a{:href => "#"}
-          = link_to "#" do
-            / %span.fi-heart{:title => "heart"}
-            / %span.fi-heart
-            / %span{:class => "fi-heart"}
-            = note.likes
-            / %span{:class => "iconic", :'data-glyph' => "heart", :title => "heart"}
-            / %i.fi-heart
-            / %img{:src => "heart.svg", :alt => "Like"}
-            = image_tag("heart.svg", :class => "icon", :title => "Like")
-            / %img(:class => "iconic", :"data-src" => "heart.svg")
-            / %img{:class => "iconic", :"data-src" => "heart.svg"}
-            / %img.iconic(:"data-src" => "heart.svg")
-            / Like
+    = render @notes
 .container
   %section.feedback
-    / = link_to("Add Note", new_note_path, class: 'feedback-button')
-    = link_to "Add Note", new_note_path, :class => 'feedback-button'
-    / %a{:href => "#", :class => "feedback-button"}
-    /   Add Note
+    = link_to 'Add Note', new_note_path, :id => 'feedback-button', remote: true

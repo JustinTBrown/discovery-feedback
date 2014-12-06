@@ -1,6 +1,9 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  # This may be needed for production: http://railsapps.github.io/rails-javascript-include-external.html
+  # config.assets.precompile += %w( application.js )
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 

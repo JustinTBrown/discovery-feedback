@@ -1,0 +1,17 @@
+$('#new_note').remove();
+$('#feedback-button').show();
+/ $('#container').append(' #{ j render @note }');
+/ $container.masonry();
+/ $container.masonry( 'appended', '#{ j render @note }' );
+/ $container.append( '#{ j render @note }' ).masonry( 'appended', '#{ j render @note }' );
+/ $('#container').append( '#{ j render @note }' ).masonry( 'appended', '#{ j render @note }' );
+/ $('#container').append( '#{ j render @note }' )
+/ $container.masonry( 'appended', '#{ j render @note }' );
+/ $container.masonry( 'addItems', @note )
+
+/ $container.append( @note ).masonry( 'appended', @note );
+
+/ var item = $container.masonry( 'getItem', @note );
+/ $container.append( item ).masonry( 'appended', item );
+
+$('#container').append(' #{ j render @note } ').masonry('reloadItems').masonry();

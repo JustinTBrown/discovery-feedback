@@ -128,7 +128,7 @@ $colour5: rgba(140, 70, 70, 0.45);
 	// margin-bottom: 0 auto;
 	padding: 0.5em;
 }
-.feedback-button{
+#feedback-button{
 	@media #{$small-only} {
 		@include button(
 			$button-med,
@@ -172,3 +172,8 @@ $colour5: rgba(140, 70, 70, 0.45);
 // h2 > f.label{
 // 	font-size: 2em;
 // }
+#note-form{
+	display: none;
+	// @include grid-row();
+	// margin-top: 4em;
+}

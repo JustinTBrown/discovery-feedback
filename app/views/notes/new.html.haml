@@ -1,12 +1,12 @@
-%section.note-form
-  = form_for(@note) do |f|
-    / %ul
-    /   - @article.errors.full_messages.each do |error|
-    /     %li= error
-    %h2
-      = f.label :'new note'
-      %br/
-      = f.text_field :text
-    / %p.feedback-button
-    %p
-      = f.submit
+/ %section.note-form
+/   = form_for(@note) do |f|
+/     / %ul
+/     /   - @article.errors.full_messages.each do |error|
+/     /     %li= error
+/     %h2
+/       = f.label :'new note'
+/       %br/
+/       = f.text_field :text
+/     / %p.feedback-button
+/     %p
+/       = f.submit
