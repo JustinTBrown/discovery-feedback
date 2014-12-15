@@ -48,3 +48,4 @@ gem 'clrs'
 # gem 'thin'
 gem 'rails_12factor', group: :production
 gem 'guard-livereload', group: :development
+gem 'high_voltage'

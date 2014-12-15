@@ -4,6 +4,6 @@
   .text{ :class => "background-#{ note.colour }" }
     = note.text
   .details
-    = link_to "#" do
+    = link_to( add_like_path(note), remote: true) do
       = note.likes
       = image_tag("heart.svg", :class => "icon", :title => "Like")
