@@ -177,3 +177,14 @@ $colour5: rgba(140, 70, 70, 0.45);
 	// @include grid-row();
 	// margin-top: 4em;
 }
+.about{
+	@include grid-row();
+	max-width: 40em;
+	padding-top: 5em;
+}
+.about h1{
+	margin-bottom: 1em;
+}
+.about p{
+	font-size: 1.25em;
+}

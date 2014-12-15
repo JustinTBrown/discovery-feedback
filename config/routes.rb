@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get 'notes/index'
-  get 'about'
+  # get 'about'
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   # The priority is based upon order of creation: first created -> highest priority.

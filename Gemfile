@@ -49,3 +49,4 @@ gem 'clrs'
 gem 'rails_12factor', group: :production
 gem 'guard-livereload', group: :development
 gem 'high_voltage'
+gem 'redcarpet'
